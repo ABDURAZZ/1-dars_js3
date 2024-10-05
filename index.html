@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://sotni.ru/wp-content/uploads/2023/08/paren-v-shleme-1.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDI4SLHq-9kukxBUWqfjN4N6ebkNwq4RJyszI-Pr1Lo9zWW8fvxF9nG65Vesqxb3bZy3o&usqp=CAU" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMImbf4FilLWm1KXnBsgJHpPL4UTMvLZ4r90kWQ9EkNvOM5lWc8VE9VJTp-qPBFb7anrk&usqp=CAU" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://hdpic.club/uploads/posts/2021-11/1636776539_1-hdpic-club-p-mersedes-drift-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYcTkS1L4O6RM2Yi87a9ICLQNjfFQAMnlXbcOW_bwiKAXHs4cT3BCQnF6PzkQoYPpNJI0&usqp=CAU" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://i.pinimg.com/474x/ec/1d/29/ec1d29e1d7c62f84fa990f0b1019270f.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://sotni.ru/wp-content/uploads/2023/08/dania-selivanov-1.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://vjoy.cc/wp-content/uploads/2020/12/unnamed-50.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6zF9q9lHQMg5OEhTBKmSUFiJZcX30A-4DqCrsiDfmROGcgHZWqxLuxpfdMCWF9-WBRUE&usqp=CAU" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+
+</html>
